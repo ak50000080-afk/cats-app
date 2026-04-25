@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="theme-color" content="#ff6b9d">
+    <title>Мои Коты 🐱</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.json">
+    <link rel="apple-touch-icon" href="icon.png">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="Мои Коты">
+</head>
+<body>
+    <header>
+        <h1>🐱 Мои Коты</h1>
+        <p class="subtitle">Коллекция любимцев</p>
+    </header>
+
+    <main>
+        <div id="loading" class="loading">
+            <div class="spinner"></div>
+            <p>Загружаем котиков...</p>
+        </div>
+
+        <div id="error" class="error hidden">
+            <p>😿 Не удалось загрузить котов</p>
+            <button onclick="loadCats()">Попробовать снова</button>
+        </div>
+
+        <div id="cats-container" class="cats-grid hidden"></div>
+    </main>
+
+    <footer>
+        <p>Сделано с ❤️ на iPhone</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
